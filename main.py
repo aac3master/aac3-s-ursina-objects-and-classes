@@ -26,7 +26,7 @@ class FUi(Entity):
     used to create menu UI fast
     if you dont want to change text and image just input pl_act = 'your python code'
     '''''
-    def __init__(self, bg_texture = '', pl_txt = 'Play', quit_act = 'application.quit()', pl_tt = '', pl_act = '', pl_img = '', quit_txt = 'Quit', quit_tt = '', quit_img = '', game_name = '''barakuda engine''', **kwargs):
+    def __init__(self, bg_texture = '', pl_txt = 'Play', quit_act = 'application.quit()', pl_tt = '', pl_act = '', pl_img = '', quit_txt = 'Quit', quit_tt = '', quit_img = '', game_name = '''Ursina''', **kwargs):
         super().__init__(
             model = '',
             **kwargs
@@ -75,7 +75,7 @@ class Dynamic_Audio(Audio):
             **kwargs
             )
     def update(self):
-        self.volume = self.volume - distance(camera, self)
+        self.volume = 100 - distance(camera, self)
 
 
 
